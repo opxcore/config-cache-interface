@@ -1,0 +1,33 @@
+{
+  "name": "opxcore/config-cache-interface",
+  "description": "The OpxCore config cache interface.",
+  "keywords": [
+    "opxcore",
+    "config",
+    "cache",
+    "interface"
+  ],
+  "license": "MIT",
+  "type": "library",
+  "homepage": "https://opxcms.com",
+  "authors": [
+    {
+      "name": "Lozovoy Vyacheslav",
+      "email": "opxcore@gmail.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/opxcore/config-cache-interface/issues",
+    "source": "https://github.com/opxcore/config-cache-interface"
+  },
+  "require": {
+    "php": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "OpxCore\\Config\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
