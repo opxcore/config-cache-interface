@@ -10,6 +10,8 @@
 
 namespace OpxCore\Config\Interfaces;
 
+use OpxCore\Config\Exceptions\ConfigCacheException;
+
 interface ConfigCacheInterface
 {
     /**
@@ -19,6 +21,8 @@ interface ConfigCacheInterface
      * @param string|null $profile
      *
      * @return  bool
+     *
+     * @throws  ConfigCacheException
      */
     public function load(array &$config, $profile = null): bool;
 
@@ -30,6 +34,8 @@ interface ConfigCacheInterface
      * @param integer|null $ttl Time in seconds to cache lives, null for infinity.
      *
      * @return  bool
+     *
+     * @throws  ConfigCacheException
      */
     public function save(array $config, $profile = null, $ttl = null): bool;
 }
